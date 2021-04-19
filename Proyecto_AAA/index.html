@@ -29,6 +29,29 @@
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+    <style>
+        .skipnav {
+            text-align: left;
+        }
+        
+        .skipnav a {
+            position: absolute;
+            left: -10000px;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+        }
+        
+        .skipnav a:focus,
+        .skipnav a:active {
+            position: static;
+            left: 0;
+            width: auto;
+            height: auto;
+            overflow: visible;
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <!-- body -->
 
@@ -37,7 +60,7 @@
     <div class="loader_bg">
         <div class="loader"><img alt="p1" alt="loading" src="images/loading.gif" alt="#" /></div>
     </div>
-
+    <div class="skipnav"><a href="#content">Skip to main content</a> <a href="#sitemap">Skip to footer site map</a></div>
     <div class="wrapper">
 
         <!-- end loader -->
